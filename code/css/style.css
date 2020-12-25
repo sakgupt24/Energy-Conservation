@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI;
+}
+
+ol{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ol li{
+    display: inline-block;
+}
+
+ol li a{
+    text-decoration: none;
+    color: yellow;
+    padding: 5px 20px;
+    border: 1px solid yellow transparent;
+    transition: 0.6s ease;
+}
+
+ol li a:hover{
+    background-color: yellow;
+    color: green;
+}
+
+ol li.active a{
+    background-color: yellow;
+    color: green;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/Background.jpg);
+    height: 97vh;
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    background: lightgreen;
+    height: 10vh;
+    color: blue;
+    text-align: center;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow v2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow, 0 0 70px yellow;
+  }
+  to {
+    text-shadow: 0 0 20px green, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green, 0 0 80px green;
+  }
+}
+
+.btn{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid yedllow;
+    padding: 10px 30px;
+    color: yellow;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: yellow;
+    color: green;
+}
